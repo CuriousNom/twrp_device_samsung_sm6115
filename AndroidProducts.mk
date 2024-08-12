@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_gta4l.mk
+    $(LOCAL_DIR)/twrp_gta4lwifi.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_gta4l-eng
+    twrp_gta4lwifi-eng
