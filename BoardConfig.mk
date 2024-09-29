@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/samsung/gta4lwifi
+DEVICE_PATH := device/samsung/gta4l
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -27,7 +27,7 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gta4lwifi
+TARGET_OTA_ASSERT_DEVICE := gta4l
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := bengal
