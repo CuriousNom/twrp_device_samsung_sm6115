@@ -15,39 +15,30 @@ odm     /odm		ext4		wait,logical,first_stage_mount
 /odm_image	emmc		/dev/block/mapper/odm		flags=backup=0;flashimg;display="Odm Image"
 
 # Physical partitions
-/boot		emmc		defaults	flags=backup=1;flashimg;display="Boot"
-/recovery	emmc		defaults	flags=backup=1;flashimg;display="Recovery"
-/metadata	ext4		defaults	flags=backup=1;display="Metadata"
-/data		f2fs		defaults	flags=length=-16384
-/cache		ext4		defaults	flags=backup=1;wipeingui;display="Cache"
-/efs		ext4		defaults	flags=backup=1;display="EFS"
-/sec_efs	ext4		defaults	flags=backup=1;display="Sec EFS"
+/boot		emmc		/dev/block/by-name/boot	flags=backup=1;flashimg;display="Boot"
+/recovery	emmc		/dev/block/by-name/recovery	flags=backup=1;flashimg;display="Recovery"
+/metadata	ext4		/dev/block/by-name/metadata	flags=backup=1;display="Metadata"
+/data		f2fs		/dev/block/by-name/userdata	flags=length=-16384
+/cache		ext4		/dev/block/by-name/cache	flags=backup=1;wipeingui;display="Cache"
+/efs		ext4		/dev/block/by-name/efs	flags=backup=1;display="EFS"
+/sec_efs	ext4		/dev/block/by-name/sec_efs	flags=backup=1;display="Sec EFS"
 
 # Modem and related partitions for radio firmware
-/modem		emmc		defaults	flags=backup=1;display="MDM"
-/dsp		emmc		defaults	flags=backup=1;display="DSP"
-/apnhlos    emmc    defaults    flags=backup=1;display="Modem"
+/modem		emmc		/dev/block/by-name/apnhlos	flags=backup=1;display="Modem"
+/dsp		emmc		/dev/block/by-name/dsp	flags=backup=1;display="DSP"
+/mdm    emmc    /dev/block/by-name/modem    flags=backup=1;display="MDM"
 
 # Miscellaneous partitions
-/misc		emmc		defaults	flags=backup=1;display="Misc"
-/keydata	ext4		defaults	flags=backup=1;display="KeyData"
-/keyrefuge	ext4		defaults	flags=backup=1;display="KeyRefuge"
-/dtbo		emmc		defaults	flags=backup=1;flashimg;display="DTBO"
-/prism		ext4		defaults	flags=backup=1;display="Prism"
-/optics		ext4		defaults	flags=backup=1;display="Optics"
-/optics_image	emmc		/dev/block/bootdevice/by-name/optics		flags=backup=1;flashimg;display="Optics Image"
-/prism_image	emmc		/dev/block/bootdevice/by-name/prism		flags=backup=1;flashimg;display="Prism Image"
-/vbmeta_samsung	emmc		defaults	flags=backup=1;flashimg;display="VBMeta Samsung"
-
-# FOTA (Firmware Over The Air) related partitions
-/misc		emmc		defaults	flags=backup=1;display="Misc"
-/modem		emmc		defaults	flags=backup=1;display="Modem"
-/mdm		emmc		defaults	flags=backup=1;display="MDM"
-/dsp		emmc		defaults	flags=backup=1;display="DSP"
+/misc		emmc		/dev/block/by-name/misc	flags=backup=1;display="Misc"
+/keydata	ext4		/dev/block/by-name/keydata	flags=backup=1;display="KeyData"
+/keyrefuge	ext4		/dev/block/by-name/keyrefuge	flags=backup=1;display="KeyRefuge"
+/dtbo		emmc		/dev/block/by-name/dtbo	flags=backup=1;flashimg;display="DTBO"
+/prism		ext4		/dev/block/by-name/prism	flags=backup=1;display="Prism"
+/optics		ext4		/dev/block/by-name/optics	flags=backup=1;display="Optics"
+/optics_image	emmc		/dev/block/by-name/optics       flags=backup=1;flashimg;display="Optics Image"
+/prism_image	emmc		/dev/block/by-name/prism        flags=backup=1;flashimg;display="Prism Image"
+/vbmeta_samsung	emmc		/dev/block/by-name/vbmeta_samsung	flags=backup=1;flashimg;display="VBMeta Samsung"
 
 # Removable storage
 /external_sd	vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1		flags=display="MicroSDCard";storage;wipeingui;removable
 /usb-otg	vfat		/dev/block/sda1	/dev/block/sda				flags=display="USB-OTG";storage;wipeingui;removable
-
-# System_dlkm and Vendor_dlkm (if needed)
-# Not included here, but ensure to add if necessary for the system_dlkm and vendor_dlkm partitions.
