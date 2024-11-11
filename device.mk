@@ -59,7 +59,7 @@ PRODUCT_COPY_FILES += \
     
 # Firmware
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/recovery/root/vendor/*:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/*
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/*:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/*
 
 # Init
 PRODUCT_COPY_FILES += \
