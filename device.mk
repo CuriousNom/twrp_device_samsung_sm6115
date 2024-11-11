@@ -52,3 +52,11 @@ TARGET_RECOVERY_DEVICE_MODULES += \
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so
+    
+# Recovery Fstab
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/recovery/root/system/etc/twrp.flags:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/twrp.flags
+    
+# Firmware
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/recovery/root/vendor/*:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/*
