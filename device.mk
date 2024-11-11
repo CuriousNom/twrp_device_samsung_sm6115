@@ -56,12 +56,80 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 # Recovery Fstab
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/system/etc/twrp.flags:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/twrp.flags
-    
-# Firmware
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/recovery/root/vendor/firmware/*:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/*
 
 # Init
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/init.recovery.usb.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.usb.rc \
     $(DEVICE_PATH)/recovery/root/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
+
+# Firmware
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/wlan/qca_cld/bdwlan.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/wlan/qca_cld/bdwlan.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/wlan/qca_cld/grippower.info:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/wlan/qca_cld/grippower.info \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/wlan/qca_cld/regdb.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/wlan/qca_cld/regdb.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/wlan/qca_cld/wlan_mac.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/wlan/qca_cld/wlan_mac.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a620_zap.b00:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a620_zap.b00 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a620_zap.b01:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a620_zap.b01 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a620_zap.b02:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a620_zap.b02 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a620_zap.elf:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a620_zap.elf \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a620_zap.mdt:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a620_zap.mdt \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a630_sqe.fw \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a650_gmu.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a650_gmu.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a650_sqe.fw:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a650_sqe.fw \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a650_zap.b00:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a650_zap.b00 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a650_zap.b01:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a650_zap.b01 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a650_zap.b02:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a650_zap.b02 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a650_zap.elf:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a650_zap.elf \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a650_zap.mdt:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a650_zap.mdt \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a702_sqe.fw:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a702_sqe.fw \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a702_zap.b00:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a702_zap.b00 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a702_zap.b01:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a702_zap.b01 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a702_zap.b02:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a702_zap.b02 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a702_zap.elf:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a702_zap.elf \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/a702_zap.mdt:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/a702_zap.mdt \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/apbtfw11.tlv:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/apbtfw11.tlv \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/apnv11.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/apnv11.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/Data.msc:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Data.msc \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/dax_param.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/focal_ts_fw_lide_hsd.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focal_ts_fw_lide_hsd.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/focal_ts_fw_tianma_tianma.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focal_ts_fw_tianma_tianma.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/focal_ts_mp_lide_hsd.ini:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focal_ts_mp_lide_hsd.ini \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/focal_ts_mp_tianma_tianma.ini:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focal_ts_mp_tianma_tianma.ini \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/focaltech_ts_fw_lide.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_lide.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/fs1801.fsm:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/fs1801.fsm \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/Himax_firmware_djn_jdi.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware_djn_jdi.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/Himax_firmware_hlt_auo.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware_hlt_auo.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/Himax_firmware_inx_fhd.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware_inx_fhd.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/Himax_firmware_lide_hsd.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware_lide_hsd.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/Himax_firmware_tianma_tianma.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware_tianma_tianma.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/Himax_firmware_txd_auo.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware_txd_auo.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/Himax_firmware_txd_auo_al.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware_txd_auo_al.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/Himax_firmware_txd_inx.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware_txd_inx.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/hx_criteria_auo.csv:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/hx_criteria_auo.csv \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/hx_criteria_djn.csv:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/hx_criteria_djn.csv \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/hx_criteria_inx.csv:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/hx_criteria_inx.csv \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/hx_criteria_tianma.csv:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/hx_criteria_tianma.csv \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ipa_fws.b00 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ipa_fws.b01 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ipa_fws.b02 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/ipa_fws.b03:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ipa_fws.b03 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ipa_fws.b04 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ipa_fws.elf \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ipa_fws.mdt \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/novatek_ts_fw_hlt_auo.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_fw_hlt_auo.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/novatek_ts_fw_lce_panda.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_fw_lce_panda.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/novatek_ts_fw_lide_hsd.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_fw_lide_hsd.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/novatek_ts_fw_txd_inx.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_fw_txd_inx.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/novatek_ts_mp_hlt_auo.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp_hlt_auo.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/novatek_ts_mp_lce_panda.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp_lce_panda.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/novatek_ts_mp_lide_hsd.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp_lide_hsd.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/novatek_ts_mp_txd_inx.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp_txd_inx.bin \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/scuba_ipa_fws.b00:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/scuba_ipa_fws.b00 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/scuba_ipa_fws.b01:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/scuba_ipa_fws.b01 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/scuba_ipa_fws.b02:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/scuba_ipa_fws.b02 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/scuba_ipa_fws.b03:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/scuba_ipa_fws.b03 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/scuba_ipa_fws.b04:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/scuba_ipa_fws.b04 \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/scuba_ipa_fws.elf:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/scuba_ipa_fws.elf \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/scuba_ipa_fws.mdt:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/scuba_ipa_fws.mdt \
+    $(DEVICE_PATH)/recovery/root/vendor/firmware/wlanmdsp.mbn:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/wlanmdsp.mbn
