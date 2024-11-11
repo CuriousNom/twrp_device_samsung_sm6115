@@ -60,3 +60,8 @@ PRODUCT_COPY_FILES += \
 # Firmware
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/vendor/*:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/*
+
+# Init
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/recovery/root/init.recovery.usb.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.usb.rc \
+    $(DEVICE_PATH)/recovery/root/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
