@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-ifneq ($(filter gta4l, $(TARGET_DEVICE)),)
+ifneq ($(filter gta4l gta4lwifi,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
