@@ -12,14 +12,12 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/universal6115
+DEVICE_PATH := device/samsung/sm6115
 DEVICE := gta4l
 
 # Kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/$(DEVICE)/prebuilt/kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/$(DEVICE)/prebuilt/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/$(DEVICE)/prebuilt/dtb.img
-
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 include $(DEVICE_PATH)/BoardConfig.mk

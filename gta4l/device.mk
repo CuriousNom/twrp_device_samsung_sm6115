@@ -12,5 +12,5 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/universal6115
-$(call inherit-product, device/samsung/universal6115/device.mk)
+DEVICE_PATH := device/samsung/sm6115
+$(call inherit-product, device/samsung/sm6115/device.mk)

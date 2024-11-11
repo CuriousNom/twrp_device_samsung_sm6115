@@ -16,7 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/universal6115/gta4l/device.mk)
+$(call inherit-product, device/samsung/sm6115/gta4l/device.mk)
 
 PRODUCT_DEVICE := gta4l
 PRODUCT_NAME := twrp_gta4l
