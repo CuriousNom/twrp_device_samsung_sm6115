@@ -11,4 +11,6 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     twrp_gta4l-eng \
-    twrp_gta4lwifi-eng
+    twrp_gta4lwifi-eng \
+    twrp_gta4lwifi-userdebug
+    twrp_gta4l-userdebug 
