@@ -2,10 +2,14 @@
 # Adjust the flags for backup, mount, and flash according to the partition types and attributes.
 
 # Logical partitions
-system      /system		ext4		wait,logical,first_stage_mount
+system      /system		erofs		wait,logical,first_stage_mount
 system      /system		f2fs		wait,logical,first_stage_mount
+system      /system		ext4		wait,logical,first_stage_mount
+vendor      /vendor		erofs		wait,logical,first_stage_mount
 vendor      /vendor		ext4		wait,logical,first_stage_mount
+product     /product	erofs		wait,logical,first_stage_mount
 product     /product	ext4		wait,logical,first_stage_mount
+odm     /odm		erofs		wait,logical,first_stage_mount
 odm     /odm		ext4		wait,logical,first_stage_mount
 
 # Symlinked partitions
